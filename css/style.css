@@ -530,11 +530,14 @@ letter-spacing: 0.02em;
 
 .footer-subscribe-form {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    margin-left: 80px;
+    /* margin-left: 80px;
     width: 453px;
-    max-height: 80px;
+    max-height: 80px; */
+}
+
+.footer-subscribe-form-label {
+    gap: 24px;
 }
 
 .subscribe-input {
@@ -547,7 +550,6 @@ letter-spacing: 0.02em;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin-top: 16px;
     font-size: 12px;
     line-height: 2; /* 200% */
     letter-spacing: 0.04em;
@@ -565,6 +567,7 @@ letter-spacing: 0.02em;
 
 .subscribe-text {
     color: #FFF;
+    margin-bottom: 16px;
     
         /* Body Medium */
         font-size: 16px;
@@ -619,9 +622,9 @@ letter-spacing: 0.02em;
     height: 100%;
     background:rgba(46, 47, 66, 0.40);
 
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
