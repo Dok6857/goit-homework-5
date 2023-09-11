@@ -528,16 +528,17 @@ letter-spacing: 0.02em;
     fill: #f4f4fd;
 }
 
+.footer-subscribe-box {
+    margin-left: 80px;
+}
+
 .footer-subscribe-form {
     display: flex;
-    justify-content: space-around;
-    /* margin-left: 80px;
-    width: 453px;
-    max-height: 80px; */
+    gap: 24px;
 }
 
 .footer-subscribe-form-label {
-    gap: 24px;
+    
 }
 
 .subscribe-input {
@@ -550,8 +551,9 @@ letter-spacing: 0.02em;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     font-size: 12px;
-    line-height: 2; /* 200% */
+    line-height: 1.5; /* 200% */
     letter-spacing: 0.04em;
     border-radius: 4px;
     border: 1px solid #FFF;
@@ -578,11 +580,11 @@ letter-spacing: 0.02em;
 }
 
 .subscribe-btn {
-    position: relative;
-    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
     height: 40px;
-    display: inline-flex;
-    justify-content: flex-start;
     padding: 8px 24px;
     margin-left: 24px;
     color: #FFF;
@@ -606,9 +608,7 @@ letter-spacing: 0.02em;
 }
 
 .footer-subscribe-icon {
-    position: absolute;
-    top:8px;
-    right: 24px;
+    margin-left: 16px;
 }
 
 /*                 MODAL FORM                      */
@@ -622,9 +622,9 @@ letter-spacing: 0.02em;
     height: 100%;
     background:rgba(46, 47, 66, 0.40);
 
-    opacity: 0;
+    /* opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: none; */
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -678,22 +678,22 @@ letter-spacing: 0.02em;
     padding: 0;
     width: 24px;
     height: 24px;
-    border: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     background-color: #E7E9FC;
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
 .close-btn:focus {
     background-color: #404BBF;
     fill: #FFFFFF;
+    border: none;
 }
 
 .close-btn-icon {
-    fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-wrapper {
@@ -805,6 +805,7 @@ letter-spacing: 0.02em;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     cursor: pointer;
+    fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -821,7 +822,6 @@ letter-spacing: 0.02em;
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label > .checkbox-span {
     background-color: #404BBF;
-    opacity: 1;
     border: none;
     fill: #F4F4FD;
 }
