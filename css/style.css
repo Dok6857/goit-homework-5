@@ -774,7 +774,7 @@ letter-spacing: 0.02em;
     padding-right: 16px;
     outline: transparent;
     background-color: transparent;
-    color: #2E2F42;
+    color: rgba(46, 47, 66, 0.4);
     
         font-size: 12px;
         line-height: 1.17;
